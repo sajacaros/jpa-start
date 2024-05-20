@@ -18,10 +18,10 @@ public class OrderItem {
     @Enumerated(EnumType.STRING)
     OrderStatus status;
     @ManyToOne
-    @JoinColumn(name = "ORDER_ID", insertable = false, updatable = false)
+    @JoinColumn(name = "ORDER_ID", insertable = true, updatable = false)
     Order order;
     @ManyToOne
-    @JoinColumn(name = "ITEM_ID", insertable = false, updatable = false)
+    @JoinColumn(name = "ITEM_ID", insertable = true, updatable = false)
     Item item;
 
     public OrderItem(Order order, Item item) {
