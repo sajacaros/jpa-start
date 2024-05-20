@@ -11,6 +11,5 @@ import lombok.ToString;
 public class Member {
     @Id
     Long id;
-
     String name;
 }
